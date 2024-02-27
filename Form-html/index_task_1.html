@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        form{
+            border: 1px solid black;
+            margin: 50px 25%;
+            padding: 50px;
+            background-color: aliceblue;
+
+            /* margin: auto; */
+        }
+
+
+        .zip1{
+            width:40%;
+        }
+        .zip2{
+            width:20%;
+        }
+        .zip3{
+            width:6%;
+        }
+        .label{
+            margin: 0px 0px;
+        }
+        .h2{
+            margin: 0px 0px 20px 0px;
+        }
+        .peregraph{
+            font-size: 11px;
+        }
+        .div1{
+            margin: 0px 12px 0px 0px;
+        }
+        br{
+            margin: 20px;
+        }
+        input{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 40px 0px 0px
+        }
+        .div2{
+            font-size: 12px;
+             width: 80%;
+            margin: 0px 0px 15px 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="/">
+        <h2 class="h2">Complaint Form</h2>
+        <div class="div2"> 
+            <strong>
+                please fill out the following form with your complaint. We will review your request and follow up with you as soon as possible.
+            </strong>
+        </div>
+
+        <section style=" display: flex;">
+            <div class="div1">
+                <label for="fname" class="label">Name</label><br>
+                <input autocomplete="off" type="text" name="fname" id="fname">
+                <p class="peregraph">First Name</p>
+            </div>
+            <div class="div1" >
+                <label for="lname" class="label"></label><br>
+                <input autocomplete="off" type="text" name="lname" id="lname">
+                <p class="peregraph">Last Name</p>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <label for="email" class="label">Email</label><br>
+        <input autocomplete="off" type="email" name="email" id="email" >
+        <br>
+        <br>
+        <label for="tel" class="label">Phone</label><br>
+        <input autocomplete="off" type="tel" name="tel" id="tel">
+        <br>
+        <br>
+
+        <label for="address" class="label">Adderess</label><br>
+        <input autocomplete="off" type="text" name="address" id="address">
+        <br>
+
+        <label for="blank" class="label"></label><br>
+        <input autocomplete="off" type="text" name="blank" id="blank">
+        <br>
+
+        <label for="lname" class="label"></label><br>
+        <input autocomplete="off" type="text" name="lname" id="lname" placeholder="" class="zip1" >
+        <input autocomplete="off" type="text" name="lname" id="lname" placeholder="" class="zip2" >
+        <input autocomplete="off" type="text" name="lname" id="lname" placeholder="" class="zip3" >
+        <br>
+
+
+    </form>
+</body>
+
+</html>
+
+<!-- 
+WBscool Editor  best for html
+    
+ -->
