@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .field {
+            justify-content: start;
+            display: flex;
+            gap: 5px;
+        }
+
+        .form {
+            width: 40%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        label{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <form action="/" class="form">
+            <div class="field">
+                    <label for="prefix"></label>
+                    <div>
+                        <span><label for="Mr">Mr.</label><input type="radio" name="prefix" id="Mr"></span>
+                        <span><label for="Mr">Mrs.</label><input type="radio" name="prefix" id="Mrs"></span>
+                        <span><label for="Mr">Ms.</label><input type="radio" name="prefix" id="Ms"></span>
+                    </div>
+            </div>
+            <div class="field">
+                <label for="username">FIRST NAME </label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="field">
+                <label for="lname">LAST NAME</label>
+                <input type="text" name="lname" id="lname">
+            </div>
+            <div class="field">
+                <label for="username">Date of Joining</label>
+                <input type="date" name="username" id="username">
+            </div>
+            <div class="field">
+                <label for="usermail">Mail Address1 </label>
+                <input type="email" name="usermail" id="usermail">
+            </div>
+            <div class="field">
+                <label for="username">Mail Address2</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="field">
+                <label for="username">City</label>
+                <input type="text" name="username" id="username">
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            /* background-color: #e4e4e480; */
+            height: 100vh;
+        }
+
+        fieldset {
+            margin: 10px auto;
+            width: 96vw;
+            border-radius: 12px;
+        }
+
+        legend {
+            margin: 0px 20px;
+            padding: 0px 6px;
+        }
+
+        .form {
+            width: 40%;
+            margin: auto;
+            display: flex;
+            padding: 15px;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .field {
+            display: flex;
+            justify-content: start;
+            gap: 5px;
+        }
+
+        label {
+            width: 200px;
+        }
+
+        #check-group {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .box {
+            display: flex;
+            justify-content: start;
+            gap: 5px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .btn {
+            padding: 4px 6px;
+            border-radius: 4px;
+            border-width: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Employee Registration Form</legend>
+            <form action="" class="form">
+
+                <div class="field">
+                    <label for="prefix"></label>
+                    <div>
+                        <span><input type="radio" name="prefix" id="mr">
+                            <label for="mr">Mr.</label></span>
+                        <span><input type="radio" name="prefix" id="mrs">
+                            <label for="mrs">Mrs.</label></span>
+                        <span><input type="radio" name="prefix" id="ms">
+                            <label for="ms">Ms.</label></span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div>
+                <div class="field">
+                    <label for="join-date">Date of Joining</label>
+                    <input type="date" name="join-date" id="join-date">
+                </div>
+                <div class="field">
+                    <label for="mail-address1">Mail Address1</label>
+                    <input type="email" name="mail-address1" id="mail-address1">
+                </div>
+                <div class="field">
+                    <label for="mail-address2">Mail Address2</label>
+                    <input type="email" name="mail-address2" id="mail-address2">
+                </div>
+                <div class="field">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="field">
+                    <label for="state">State</label>
+                    <!--- India states -->
+                    <select id="state" name="state">
+                        <option value="">Select state</option>
+                        <option value="AN">Andaman and Nicobar Islands</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="AR">Arunachal Pradesh</option>
+                        <option value="AS">Assam</option>
+                        <option value="BR">Bihar</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="CT">Chhattisgarh</option>
+                        <option value="DN">Dadra and Nagar Haveli</option>
+                        <option value="DD">Daman and Diu</option>
+                        <option value="DL">Delhi</option>
+                        <option value="GA">Goa</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="HR">Haryana</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="JH">Jharkhand</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="KL">Kerala</option>
+                        <option value="LA">Ladakh</option>
+                        <option value="LD">Lakshadweep</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MN">Manipur</option>
+                        <option value="ML">Meghalaya</option>
+                        <option value="MZ">Mizoram</option>
+                        <option value="NL">Nagaland</option>
+                        <option value="OR">Odisha</option>
+                        <option value="PY">Puducherry</option>
+                        <option value="PB">Punjab</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="SK">Sikkim</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="TG">Telangana</option>
+                        <option value="TR">Tripura</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="UT">Uttarakhand</option>
+                        <option value="WB">West Bengal</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="zip">Zip</label>
+                    <input type="number" name="zip" id="zip">
+                </div>
+                <div class="field">
+                    <label for="photo">Upload Photo</label>
+                    <input type="file" name="photo" id="photo">
+                </div>
+                <div class="field">
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="field">
+                    <label for="mobile">Mobile</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="+91">
+                </div>
+                <div class="field">
+                    <label for="check-group">Languages Known</label>
+                    <div class="check-group" id="check-group">
+                        <div class="box"><input type="checkbox" name="gujarati" id="gujarati"> <label
+                                for="gujarati">Gujarati</label></div>
+                        <div class="box"><input type="checkbox" name="hindi" id="hindi"> <label
+                                for="hindi">Hindi</label></div>
+                        <div class="box"><input type="checkbo<!DOCTYPE html>
+                            <html lang="en">
+                            
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Employee Registration Form</title>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                    }
+                            
+                                    .container {
+                                        width: 100%;
+                                        /* background-color: #e4e4e480; */
+                                        height: 100vh;
+                                    }
+                            
+                                    fieldset {
+                                        margin: 10px auto;
+                                        width: 96vw;
+                                        border-radius: 12px;
+                                    }
+                            
+                                    legend {
+                                        margin: 0px 20px;
+                                        padding: 0px 6px;
+                                    }
+                            
+                                    .form {
+                                        width: 40%;
+                                        margin: auto;
+                                        display: flex;
+                                        padding: 15px;
+                                        flex-direction: column;
+                                        gap: 12px;
+                                    }
+                            
+                                    .field {
+                                        display: flex;
+                                        justify-content: start;
+                                        gap: 5px;
+                                    }
+                            
+                                    label {
+                                        width: 200px;
+                                    }
+                            
+                                    #check-group {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 2px;
+                                        justify-content: center;
+                                        align-items: start;
+                                    }
+                            
+                                    .box {
+                                        display: flex;
+                                        justify-content: start;
+                                        gap: 5px;
+                                    }
+                            
+                                    .btn-group {
+                                        display: flex;
+                                        justify-content: center;
+                                        gap: 10px;
+                                        padding: 10px;
+                                    }
+                            
+                                    .btn {
+                                        padding: 4px 6px;
+                                        border-radius: 4px;
+                                        border-width: 1px;
+                                    }
+                                </style>
+                            </head>
+                            
+                            <body>
+                                <div class="container">
+                                    <fieldset>
+                                        <legend>Employee Registration Form</legend>
+                                        <form action="" class="form">
+                            
+                                            <div class="field">
+                                                <label for="prefix"></label>
+                                                <div>
+                                                    <span><input type="radio" name="prefix" id="mr">
+                                                        <label for="mr">Mr.</label></span>
+                                                    <span><input type="radio" name="prefix" id="mrs">
+                                                        <label for="mrs">Mrs.</label></span>
+                                                    <span><input type="radio" name="prefix" id="ms">
+                                                        <label for="ms">Ms.</label></span>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label for="fname">First Name</label>
+                                                <input type="text" name="fname" id="fname" placeholder="First Name">
+                                            </div>
+                                            <div class="field">
+                                                <label for="lname">Last Name</label>
+                                                <input type="text" name="lname" id="lname" placeholder="Last Name">
+                                            </div>
+                                            <div class="field">
+                                                <label for="join-date">Date of Joining</label>
+                                                <input type="date" name="join-date" id="join-date">
+                                            </div>
+                                            <div class="field">
+                                                <label for="mail-address1">Mail Address1</label>
+                                                <input type="email" name="mail-address1" id="mail-address1">
+                                            </div>
+                                            <div class="field">
+                                                <label for="mail-address2">Mail Address2</label>
+                                                <input type="email" name="mail-address2" id="mail-address2">
+                                            </div>
+                                            <div class="field">
+                                                <label for="city">City</label>
+                                                <input type="text" name="city" id="city">
+                                            </div>
+                                            <div class="field">
+                                                <label for="state">State</label>
+                                                <!--- India states -->
+                                                <select id="state" name="state">
+                                                    <option value="">Select state</option>
+                                                    <option value="AN">Andaman and Nicobar Islands</option>
+                                                    <option value="AP">Andhra Pradesh</option>
+                                                    <option value="AR">Arunachal Pradesh</option>
+                                                    <option value="AS">Assam</option>
+                                                    <option value="BR">Bihar</option>
+                                                    <option value="CH">Chandigarh</option>
+                                                    <option value="CT">Chhattisgarh</option>
+                                                    <option value="DN">Dadra and Nagar Haveli</option>
+                                                    <option value="DD">Daman and Diu</option>
+                                                    <option value="DL">Delhi</option>
+                                                    <option value="GA">Goa</option>
+                                                    <option value="GJ">Gujarat</option>
+                                                    <option value="HR">Haryana</option>
+                                                    <option value="HP">Himachal Pradesh</option>
+                                                    <option value="JK">Jammu and Kashmir</option>
+                                                    <option value="JH">Jharkhand</option>
+                                                    <option value="KA">Karnataka</option>
+                                                    <option value="KL">Kerala</option>
+                                                    <option value="LA">Ladakh</option>
+                                                    <option value="LD">Lakshadweep</option>
+                                                    <option value="MP">Madhya Pradesh</option>
+                                                    <option value="MH">Maharashtra</option>
+                                                    <option value="MN">Manipur</option>
+                                                    <option value="ML">Meghalaya</option>
+                                                    <option value="MZ">Mizoram</option>
+                                                    <option value="NL">Nagaland</option>
+                                                    <option value="OR">Odisha</option>
+                                                    <option value="PY">Puducherry</option>
+                                                    <option value="PB">Punjab</option>
+                                                    <option value="RJ">Rajasthan</option>
+                                                    <option value="SK">Sikkim</option>
+                                                    <option value="TN">Tamil Nadu</option>
+                                                    <option value="TG">Telangana</option>
+                                                    <option value="TR">Tripura</option>
+                                                    <option value="UP">Uttar Pradesh</option>
+                                                    <option value="UT">Uttarakhand</option>
+                                                    <option value="WB">West Bengal</option>
+                                                </select>
+                                            </div>
+                                            <div class="field">
+                                                <label for="zip">Zip</label>
+                                                <input type="number" name="zip" id="zip">
+                                            </div>
+                                            <div class="field">
+                                                <label for="photo">Upload Photo</label>
+                                                <input type="file" name="photo" id="photo">
+                                            </div>
+                                            <div class="field">
+                                                <label for="email">E-Mail</label>
+                                                <input type="email" name="email" id="email">
+                                            </div>
+                                            <div class="field">
+                                                <label for="mobile">Mobile</label>
+                                                <input type="tel" name="mobile" id="mobile" placeholder="+91">
+                                            </div>
+                                            <div class="field">
+                                                <label for="check-group">Languages Known</label>
+                                                <div class="check-group" id="check-group">
+                                                    <div class="box"><input type="checkbox" name="gujarati" id="gujarati"> <label
+                                                            for="gujarati">Gujarati</label></div>
+                                                    <div class="box"><input type="checkbox" name="hindi" id="hindi"> <label
+                                                            for="hindi">Hindi</label></div>
+                                                    <div class="box"><input type="checkbox" name="english" id="english"> <label
+                                                            for="english">English</label></div>
+                                                    <div class="box"><input type="checkbox" name="marathi" id="marathi"> <label
+                                                            for="marathi">Marathi</label></div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label for="additonal-info">Additional Information</label>
+                                                <textarea name="additonal-info" id="additonal-info" cols="30" rows="3"
+                                                    placeholder="Optional"></textarea>
+                                            </div>
+                                            <div class="btn-group">
+                                                <input type="submit" value="Submit" class="btn">
+                                                <input type="reset" value="Reset" class="btn">
+                                            </div>
+                                        </form>
+                                    </fieldset>
+                                </div>
+                            </body>
+                            
+                            </html>x" name="english" id="english"> <label
+                                for="english">English</label></div>
+                        <div class="box"><input type="checkbox" name="marathi" id="marathi"> <label
+                                for="marathi">Marathi</label></div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="additonal-info">Additional Information</label>
+                    <textarea name="additonal-info" id="additonal-info" cols="30" rows="3"
+                        placeholder="Optional"></textarea>
+                </div>
+                <div class="btn-group">
+                    <input type="submit" value="Submit" class="btn">
+                    <input type="reset" value="Reset" class="btn">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
