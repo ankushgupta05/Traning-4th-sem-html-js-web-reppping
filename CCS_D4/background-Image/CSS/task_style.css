@@ -1,0 +1,54 @@
+body{
+    background-image: url('../Image/painting-mountain-lake-with-mountain-background_188544-9126.avif');
+    background-size: cover;
+    display: flex;
+    text-align: endend;
+    position: relative;
+    left: 700px;
+
+    /* below line importand */
+    background-attachment: fixed;  
+}
+.container{
+    color: white;
+    /* width: 50%; */
+    /* height: 50%; */
+    text-align: center;
+
+}
+ 
+a:{
+    background-color: rgb(116, 116, 248);
+    font-size: 25px;
+}
+
+h1{
+    font-size: 50px;
+    color: #f39215;
+    margin: 68px 0px 10px 0px;
+}
+
+h3{
+    font-size: 30px;
+    background-color: #ff3b98;
+    padding: 9px;
+    margin: 10px 6px;
+}
+
+.divlast{
+    color: black;
+    object-fit: contain;
+    background-image: url('../Image/4e.gif');
+    font-size: 40px;
+    background-color: #72676c;
+    padding: 50px;
+    margin: 15px 130px;
+    width: 50%;
+}
+
+.params{
+    position: absolute;
+    color: white;
+    opacity: 0.4;
+    color: #fbb679;
+}
