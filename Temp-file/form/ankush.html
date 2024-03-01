@@ -22,7 +22,13 @@
         }
         label{
             width: 200px;
+            font-weight: 600;
         }
+
+        select{
+            display: flex;
+        }
+
     </style>
 </head>
 
@@ -47,7 +53,7 @@
             </div>
             <div class="field">
                 <label for="username">Date of Joining</label>
-                <input type="date" name="username" id="username">
+                <input type="datetime-local" name="username" id="username">
             </div>
             <div class="field">
                 <label for="usermail">Mail Address1 </label>
@@ -60,6 +66,51 @@
             <div class="field">
                 <label for="username">City</label>
                 <input type="text" name="username" id="username">
+            </div>
+            <div class="field">
+                <label  for="">State</label>
+                <select name="" id="">
+                    <option value="" selected>Madhya Pradesh</option>
+                    <option value="">Andhra Pradesh</option>
+                    <option value="">Chhattisgarh</option>
+                    <option value="">Goa</option>
+                    <option value="">Haryana</option>
+                    <option value="">Himachal</option>
+                    <option value="">Jharkhand</option>
+                    <option value="">Karnataka</option>
+                    <option value=""  >Gujarat</option>
+                    <option value="">Bihar</option>
+                    <option value="">Maharashtra</option>
+                    <option value="">Manipur</option>
+                    <option value="">Meghalaya</option>
+                    <option value="">Mizoram</option>
+                    <option value="">Nagaland</option>
+                    <option value="">Odisha</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="zip">Zip</label>
+                <input type="text" name="zip" id="zip">
+            </div>
+            <div class="field">
+                <label for="usermail">E-Mail</label>
+                <input type="mail" name="usermail" id="usermail">
+            </div>
+            <div class="field">
+                <label for="phone">Zip</label>
+                <input type="number" name="phone" id="phone" placeholder="+91">
+            </div>
+            <div class="field">
+                <label for="">Languages Known</label>
+
+                <input type="checkbox">
+                <label for="">Gujrati</label><br>
+                <input type="checkbox">
+                <label for="">Hindi</label><br>
+                <input type="checkbox">
+                <label for="">English</label><br>
+                <input type="checkbox">
+                <label for="">Marathi</label><br>
             </div>
         </form>
     </fieldset>
