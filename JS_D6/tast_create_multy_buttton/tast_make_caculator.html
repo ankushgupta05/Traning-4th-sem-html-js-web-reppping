@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            background-color: #121212;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: auto;
+            border-radius: 20px;
+            border: 2px solid gray;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn {
+            display: flex;
+        }
+
+        .btn>* {
+            width: 50%;
+        }
+
+        #sollution {
+            height: 50px;
+            border: 2px solid grey;
+            height: 45px;
+            margin: 10px 68px;
+            color: white;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .button {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 30px;
+            border: none;
+            background-color: #ddecf9;
+            font-weight: 700;
+        }
+    </style>
+    <script>
+
+        var a;
+        var b;
+        function geta() {
+            a = parseInt(prompt("enter 1st value : "))
+            console.log(a)
+        }
+        function getb() {
+            b = parseInt(prompt("enter 2nd value : "))
+            console.log(b)
+        }
+        function add(a, b) {
+            var c = 0;
+            c = a + b;
+            console.log(c)
+            document.getElementById('sollution').innerHTML = c
+
+        }
+        function sub(a, b) {
+            var c = 0;
+            c = a - b;
+            console.log(c)
+            document.getElementById('sollution').innerHTML = c
+        }
+        function mul(a, b) {
+            var c = 0;
+            c = a * b;
+            console.log(c)
+            document.getElementById('sollution').innerHTML = c
+        }
+        function div(a, b) {
+            var c = 0;
+            c = a / b;
+            console.log(c)
+            document.getElementById('sollution').innerHTML = c
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Calculator </h2>
+        <div class="input">
+
+            <input type="text" id="username" placeholder="Enter 1st value" onmouseover="geta()">
+            <input type="password" id="password" placeholder="Enter 2nd value" onmouseover="getb()">
+        </div>
+
+        <div class="caculator-btn">
+            <div class="btn">
+                <button class="button" onclick="add(a,b)">Addition</button>
+                <button class="button" onclick="sub(a,b)">Substraction</button>
+            </div>
+            <div class="btn">
+                <button class="button" onclick="mul(a,b)">Multification</button>
+                <button class="button" onclick="div(a,b)">Divition</button>
+            </div>
+        </div>
+
+        <div id="sollution">
+        </div>
+    </div>
+</body>
+
+</html>

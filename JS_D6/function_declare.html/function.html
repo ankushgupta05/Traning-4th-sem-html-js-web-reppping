@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .box {
+            width: 40%;
+            margin: auto;
+        }
+
+        .box>* {
+            margin: 10px;
+        }
+
+        .button {
+            background-color: greenyellow;
+            padding: 10px 14px;
+            border-radius: 20px;
+            border: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<script>
+    function add(a, b) {
+        var c = 0;
+        c = a + b;
+        // window.alert(a + ' +  ' + b + '  = ' + c) Both are same
+        alert(a + ' +  ' + b + '  = ' + c)
+    }
+    function sub(a, b) {
+        var c = 0;
+        c = a - b;
+        window.alert(a + ' -  ' + b + '  = ' + c)
+    }
+    function mul(a, b) {
+        var c = 0;
+        c = a * b;
+        window.alert(a + ' *  ' + b + '  = ' + c)
+    }
+    function div(a, b) {
+        var c = 0;
+        c = a / b;
+        window.alert(a + ' /  ' + b + '  = ' + c)
+    }
+</script>
+
+<body>
+    <div class="box">
+        <button class="button" onclick="add(12,12)">Addition</button>
+        <button class="button" onclick="sub(20,12)">Substraction</button>
+        <button class="button" onclick="mul(12,12)">Multification</button>
+        <button class="button" onclick="div(60,12)">Divition</button>
+    </div>
+</body>
+
+</html>

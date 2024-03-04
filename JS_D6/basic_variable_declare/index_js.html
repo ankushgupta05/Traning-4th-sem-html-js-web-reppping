@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h2 {
+            color: rgb(89, 41, 155);
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box>* {
+            margin: 20px;
+            padding: 5px;
+        }
+
+        .field {
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="data1" class="field" style="border: 2px solid red; height: 50px; width: 50px;"></div>
+        <div id="data2" class="field" style="border: 2px solid red; height: 50px; width: 50px;"></div>
+        <div id="data3" class="field" style="border: 2px solid red; height: 50px; width: 50px;"></div>
+        <div id="data4" class="field" style="border: 2px solid red; height: 50px; width: 50px;"></div>
+    </div>
+
+    <script>
+        var n1 = 10;
+        var n2 = 20;
+        var add;
+        add = n1 + n2;
+        sub = n1 - n2;
+        mul = n1 * n2;
+        divison = n1 / n2;
+        console.log(add)
+        // document.write(add)
+
+        document.write('<h2> value  n1 = ' + n1 + ' and n2 = ' + n2 + '</h2>')
+        document.write('<h3> var n1 + n2  = ' + add + '</h3>')
+        document.write('<h3> var n1 - n2   = ' + sub + '</h3>')
+        document.write('<h3> var n1 * n2 is = ' + mul + '</h3>')
+        document.write('<h3> var n1 / n2 is = ' + divison + '</h3>')
+
+        /* print in html body tag */
+        document.getElementById('data1').innerHTML = add;
+        document.getElementById('data2').innerHTML = sub;
+        document.getElementById('data3').innerHTML = mul;
+        document.getElementById('data4').innerHTML = divison;
+       
+       // window.alert( "all operation = " + add + ' ' + sub + ' ' + mul + ' ' + divison) 
+        alert("all operation = " + add + ' ' + sub + ' ' + mul + ' ' + divison)
+       
+       
+        console.log( "all operation = " + add + ' ' + sub + ' ' + mul + ' ' + divison)
+
+    </script>
+</body>
+
+</html>
