@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     /*         
+     NOTE :- 
+     on inline element we can not set height and width of the element  
+     */
+
+      *{
+            margin: 5px;
+        }
+        body{
+            background-color: aliceblue;
+        }
+
+        .border-style{
+            padding: 20px 20px;
+            border-style: solid solid  dotted groove;
+        }
+
+        div.one{
+            border-style: solid;
+            border-width: 10px;
+            border-color: brown;
+        }
+        div.two{
+
+        /* border width indivisullay */
+            padding: 5px 5px;
+            border-left: 5px solid black;
+            border-right: 10px dotted red;
+            border-top: 15px solid pink;
+            border-bottom: 20px solid blue;
+            background-color: chartreuse;
+            
+            border-radius: 10px;
+        }
+        
+        div.three{
+            padding: 5px 5px;
+            border-left: 5px solid black;
+            border-right: 10px dotted red;
+            border-top: 15px solid pink;
+            border-bottom: 20px solid blue;
+            background-color: chartreuse;
+
+        /* border radious indivisullay */
+
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 30px;
+        }
+
+
+        .block{
+            display: block;
+            border: 5px solid black;
+        }
+
+        a.four{
+            border: 5px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- multy border -->
+    <div class="border-style">Lorem ipsum, dolor sit amet consectetur adipisicing elit.  </div>
+    
+    
+    <div class="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit.  </div>
+   
+    <div class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit.  </div>
+
+    <div class="three">Lorem ipsum, dolor sit amet consectetur adipisicing elit.  </div>
+    
+    <!-- <span class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit.  </span> -->
+
+    <button><a class="four" href="https://www.sistecgn.ac.in/erp">SISTec</a></button>
+    
+    <a class="block" href="">display block</a>
+
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    margin: 5px;
+}
+
+body{
+    margin: 178px;
+    background-color: aquamarine;
+    
+    display: flex;
+    justify-content: center; /* line line work when display property name declare on above line*/
+    background-image: url('../Image/images (2).jpg');
+
+}
+
+#box{
+    /* it convert into inline element */
+    /* display: inline;  */
+    height: 100px;
+    width: 200px;
+    border: 10px solid rgb(197, 193, 193);
+    text-align: center;
+    line-height: 98px;
+    font-size: 39px;
+    border-radius: 35px;
+    
+    border-top-left-radius: 0px;
+    border-top-right-radius:90px ;
+    
+    border-bottom-left-radius: 91px;
+    border-bottom-right-radius: 0px;
+    
+    
+}
+#box:hover{
+    
+    color: rgb(116, 86, 86);
+        border-top-left-radius: 90px;
+        border-top-right-radius:0px ;
+        
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 91px;
+        background-image: url('../Image/images.jpg');
+        background-position: center;
+        cursor: pointer;
+
+        
+    /* shadow property  */
+    box-shadow: 40px 46px #836464;
+
+    /* trasition property */
+    transition: 0.8s;
+
+}
+
+
+
+
+#box1{
+    /* display: inline; */
+    height: 100px;
+    width: 200px;
+    border: 10px solid rgb(197, 193, 193);
+    text-align: center;
+    line-height: 98px;
+    font-size: 39px;
+
+
+}
+
+
+#box1:hover{
+    background-color: aquamarine;
+    background-image: url('/Image/painting-mountain-lake-with-mountain-background_188544-9126.avif');
+    background-size: cover;
+
+
+     /* shadow property  */
+     box-shadow: 40px 46px #836464;
+
+     /* trasition property */
+     transition: 0.8s;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            transition: width 0.8s ease-in-out,background-color 0.5s ease-in-out;
+        }
+        input:focus{
+            width: 250px;
+            background-color: aqua;
+        }
+        
+
+        .text{
+            transition: ;
+        }
+
+
+        .text h1{
+            transition: background-color 0.5s ease-in-out, color 0.5 ease-in-out;
+        }
+
+        .text:hover{
+            background-color: blue;
+            color: white;
+        }
+
+
+
+        .text1{
+            transition: background-color 0.5s ease-in-out  ,Transform 0.5s ease-in-out;
+            width: 70px;
+            height: 50px;
+            background-color: blue;
+        }
+        
+        .text1:hover{
+            background-color: red;
+            transform: rotate(360deg);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text">
+
+    <div class="text">
+        <h1>CSS</h1>
+    </div>
+
+    <div class="text1">Transform</div>
+</body>
+</html>
