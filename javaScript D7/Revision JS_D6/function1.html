@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+            border: 2px solid black;
+
+        }
+
+        .field {
+            display: flex;
+        }
+
+        button {
+            width: 50%;
+            margin: 10px;
+            border-radius: 10px;
+
+        }
+        #sollution{
+            font-size: 20px;
+            color: black;
+            margin: 10px;
+            height: 70px;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        /* #sollution {
+            height: 50px;
+            border: 2px solid grey;
+            height: 45px;
+            margin: 10px 68px;
+            color: white;
+            font-size: 32px;
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="sollution"></div>
+
+        <div>
+            <div class="field getdata">
+                <button onclick="geta()" >Geta</button>
+                <button onclick="getb()" >Getb</button>
+                <!-- <button onclick="mul()" >Button3</button> -->
+            </div>
+            <div class="field">
+                <button onclick="add()" >Button1</button>
+                <button onclick="sub()" >Button2</button>
+                <button onclick="mul()" >Button3</button>
+            </div>
+            <div class="field">
+                <button onclick="add()" >Button1</button>
+                <button onclick="sub()" >Button2</button>
+                <button onclick="mul()" >Button3</button>
+            </div>
+           
+        </div>
+        
+    </div>
+
+    <script>
+         var a;
+        var b;
+        function geta() {
+            a = parseInt(prompt("enter 1st value : "))
+            console.log(a)
+        }
+        function getb() {
+            b = parseInt(prompt("enter 2nd value : "))
+            console.log(b)
+        }
+        function add() {
+            var c = 0;
+            c = a + b;
+            console.log(c)
+            document.getElementById('sollution').innerHTML = c
+
+        }
+        function sub() {
+            var c = 0;
+            c = a - b;
+            console.log(c)
+            document.getElementById('sollution').innerHTML = c
+        }
+        function mul() {
+            var c = 0;
+            c = a * b;
+            console.log(c)
+            document.getElementById('sollution').innerHTML = c
+        }
+        function div() {
+            var c = 0;
+            c = a / b;
+            console.log(c)
+            document.getElementById('sollution').innerHTML = c
+        }
+    </script>
+
+
+</body>
+
+</html>

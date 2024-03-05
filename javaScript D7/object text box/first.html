@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #d3efef;
+        }
+
+        .container {
+            border-radius: 13px;
+            margin-top: 80px;
+            height: 300px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: auto;
+            background-color: aliceblue;
+        }
+        input {
+            padding: 6px;
+            margin: 12px 92px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="n1" placeholder="Enter the 1st number : ">
+        <input type="text" id="n2" placeholder="Enter the 2nd number : ">
+        <input type="text" id="n3" placeholder="Enter the 3nd number : ">
+        <input onfocus="add()" type="submit" id="result" placeholder="Addition">
+    </div>
+</body>
+
+<script>
+
+    var a;
+    var b;
+    var c;
+    function add() {
+        a = document.getElementById("n1").value
+        b = document.getElementById("n2").value
+        c = document.getElementById("n3").value
+
+        var total = Number(a) + Number(b) + Number(c);
+        console.log(total)
+        document.getElementById("result").value = total;
+    }
+
+
+
+</script>
+
+</html>

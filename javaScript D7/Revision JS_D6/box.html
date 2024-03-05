@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+
+        }
+
+        .header {
+            padding: 0px 20px;
+            background-color: bisque;
+            height: 300px;
+            width: 80%;
+            display: flex;
+            margin: auto;
+            margin-top: 80px;
+            border: 2px solid black;
+            border: none;
+            border-radius: 10px;
+
+        }
+
+        .box {
+            background-color: palegreen;
+            margin: 40px 30px;
+            width: 50%;
+            border: 2px solid black;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .common {
+            color: blue;
+            height: 50%;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box1,
+        #box2 {
+            color: blueviolet;
+            height: 50%;
+            font-size: 30px;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="box">
+            <div class="common">Befor Swaping a and b </div>
+            <div id="box1"></div>
+        </div>
+        <div class="box">
+            <div class="common">After Swaping a and b </div>
+            <div id="box2"></div>
+        </div>
+    </div>
+
+    <script>
+        var a = 10;
+        var b = 20;
+
+        document.getElementById("box1").innerHTML = ' a = ' + a + '  and   b = ' + b + ' ';
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        document.getElementById("box2").innerHTML = ' a = ' + a + '  and  b = ' + b + ' ';
+
+    </script>
+</body>
+
+</html>

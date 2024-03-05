@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: azure;
+        }
+
+        h1 {
+            margin-top: 0px;
+            text-align: center;
+            margin-bottom: 36px;
+            font-weight: bolder;
+        }
+
+        fieldset {
+            height: 230px;
+            background: #fff4e5;
+            border-radius: 12px;
+            margin: 0px 20px
+        }
+
+        .field {
+            display: flex;
+            justify-content: center;
+            border: 3px solid #16e116;
+            ;
+            background-color: rgb(219, 219, 61);
+            border-radius: 15px;
+            margin: 2px 4px;
+        }
+
+        .main {
+            height: 150px;
+            border: 3px solid #ad9f9f;
+            background: #53fd91;
+            border-radius: 15px;
+            margin: 30px 0px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            background-color: #e9f1e9;
+            font-weight: bold;
+            padding: 10px 25px;
+            margin: 10px;
+            border: 2px solid rgb(215, 116, 17);
+            border-radius: 12px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Checking Eligibility - Vote!</h1>
+        <fieldset>
+            <legend>Vote!</legend>
+            <div class="field">
+                <span>Enter Your age  </span>
+                <input type="text" id="n1">
+            </div>
+            <div class="main">
+                <button onclick="check()">click here ..!</button>
+            </div>
+        </fieldset>
+    </div>
+
+    <script>
+
+        var a;
+
+        function check() {
+           a = document.getElementById("n1").value;
+           if(a>=18){
+            alert("Congrachulation, You are Eligible for voting!!")
+        }
+        else{
+               alert("Sorry, You Not are Eligible for voting!!")
+           }
+        
+       }
+
+
+    </script>
+</body>
+
+</html>

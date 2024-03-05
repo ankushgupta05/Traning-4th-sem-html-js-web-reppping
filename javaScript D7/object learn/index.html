@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: auto;
+            height: 150px;
+            display: flex;
+        }
+        .box{
+            width: 50%;
+            margin: 12px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="name" class="box"></div>
+        <div id="address" class="box"></div>
+        <div id="branch" class="box"></div>
+        <div id="roll" class="box"></div>
+    </div>
+
+    <script>
+        var obj ={
+            name:"Ankush Gupta",
+            address:"Ghandi Nagar",
+            branch:"AI & DS",
+            roll:"0187AS221010"
+        }
+
+        document.getElementById("name").innerHTML = obj.name;
+        document.getElementById("address").innerHTML = obj.address;
+        document.getElementById("branch").innerHTML = obj.branch;
+        document.getElementById("roll").innerHTML = obj.roll;
+    </script>
+</body>
+</html>
