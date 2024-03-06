@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: azure;
+        }
+
+        h1 {
+            margin-top: 0px;
+            text-align: center;
+            margin-bottom: 36px;
+            font-weight: bolder;
+        }
+
+        fieldset {
+            height: 230px;
+            background: #fff4e5;
+            border-radius: 12px;
+            margin: 0px 20px
+        }
+
+        .field {
+            display: flex;
+            justify-content: center;
+            border: 3px solid #16e116;
+            ;
+            background-color: rgb(219, 219, 61);
+            border-radius: 15px;
+            margin: 2px 4px;
+        }
+
+        .main {
+            height: 150px;
+            border: 3px solid #ad9f9f;
+            background: #53fd91;
+            border-radius: 15px;
+            margin: 30px 0px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            background-color: #e9f1e9;
+            font-weight: bold;
+            padding: 10px 25px;
+            margin: 10px;
+            border: 2px solid rgb(215, 116, 17);
+            border-radius: 12px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Greatest :- Among Three Numbers</h1>
+        <fieldset>
+            <legend>Greatest</legend>
+            <div class="field">
+                <span>Enter First Number </span>
+                <input type="text" id="n1"  autocomplete="off">
+                <span>Enter Second Number </span>
+                <input type="text" id="n2">
+                <span>Enter Third Number </span>
+                <input type="text" id="n3">
+                <span>Result </span>
+                <input type="text" id="result" placeholder="result">
+            </div>
+            <div class="main">
+                <button onclick="greatest()">click here ..!</button>
+            </div>
+        </fieldset>
+    </div>
+
+    <script>
+
+        var a;
+        var b;
+        var c;
+
+
+
+        function getdata() {
+
+            a = document.getElementById("n1").value
+            b = document.getElementById("n2").value
+            c = document.getElementById("n3").value
+            a = Number(a);
+            b = Number(b);
+            c = Number(c);
+
+        }
+
+        function greatest() {
+            getdata();
+            if (a >= b && a >= c) {
+                document.getElementById("result").value = "First number is gretest";
+            }
+            else if (b >= c && b >= a) {
+                document.getElementById("result").value = "Second number is gretest";
+            }
+            else {
+                document.getElementById("result").value = "Third number is gretest";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

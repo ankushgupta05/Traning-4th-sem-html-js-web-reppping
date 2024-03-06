@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            width: 40%;
+            margin: auto;
+            border: 1px solid black;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div>
+            <h1>Ragistration Form</h1>
+            <h3></h3>
+        </div>
+        <div class="main">
+
+        </div>
+        div
+
+    </div> -->
+
+
+    <div align="center">
+        <br>
+        <br>
+        <br>
+        <h1>Ragistration Form</h1>
+        <h3 id="abc"></h3>
+        <form method="post" action="" onsubmit="return verify()">
+            <table border="1" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td colspan="2" align="center">* All fields are Require</td>
+                </tr>
+                <tr>
+                    <td>Name </td>
+                    <td><input type="text" name="name" id="name" size="25" placeholder="Enter Name"></td>
+                </tr>
+                <tr>
+                    <td>Gender </td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Mail
+                        <input type="radio" name="gender" value="female"> Femail
+                    </td>
+                </tr>
+                <tr>
+                    <td>User name </td>
+                    <td><input type="text" name="username" id="username" size="25"></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" name="password" id="password" size="25"></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" value="REGISTER">
+                        <input type="text" value="CLEAR">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function verify(params) {
+            var name = document.getElementById("name");
+            var gender = document.getElementsByName("gender");
+            var username = document.getElementById("username");
+
+            var msg = new Array();  // creating dynemic array
+            var flag = 1;
+            var message = "Following Details are Require\n";
+
+            if(name.value = ""){
+                msg[0]="name is Require";
+                flag = 0;
+            }else{ msg[0]="" }
+
+            if(gender[0].checked==false && gender[1]==false){
+                msg[0] = "select Gender";
+                flag=0;
+            }else{ msg[1] ="" }
+
+            if(username.value = ""){
+                msg[0]="username is Require";
+                flag = 0;
+            }else{ msg[2]="" }
+            
+            if(pass.value = ""){
+                msg[0]="password is Require";
+                flag = 0;
+            }else{ msg[3]="" }
+           
+            if(pass.value.length < 8 ){
+                msg[4]="password must be 8 characters long";
+                flag = 0;
+            }else{ msg[4]="" }
+
+            if(flag == 0){
+                alert(msg[0]+ '\n' + msg[1]+ '\n' + msg[2] + '\n' +  msg[1]+ '\n' + msg[2]);
+            }
+
+            if(flag == 0){
+                for(var x = 0; x<=4; x++){
+                    if(msg[x] != ""){
+                        message +=msg[x] + "\n";
+                    }
+                }
+                alert(message);
+                document.getElementById("abc").innerHTML = message;
+                return false;
+            }
+            else{
+                return true;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
