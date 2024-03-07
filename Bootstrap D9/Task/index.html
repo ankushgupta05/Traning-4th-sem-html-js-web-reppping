@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            text-align: center;
+            color: white;
+            background-color: black;
+            font-size: 35px;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(26deg, #ff3a83, #ff4061);
+        }
+
+        .container {
+            background: linear-gradient(89deg, #85467b 10%, #e50e7b 90%);
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin-top: 120px;
+            padding: 30px;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            margin: 5px;
+        }
+        .common{
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">Welcome to SISTec, Gandhi Nagar</div>
+
+    <div class="container">
+        <div class="header">Login Panel</div>
+        <!-- <div class="inputform">
+            <div>
+                <table>
+
+                </table>
+                <label class="common" for="">Username :</label>
+                <input class="common" type="text" id="username" placeholder="Enter Username">
+            </div>
+            <div>
+                <label for="">Password :</label>
+                <input type="password" id="userpassword" placeholder="Enter Password">
+            </div>
+        </div> -->
+        <div class="input">
+            <table>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" id="username" placeholder="Enter Username"></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" id="userpassword" placeholder="Enter Password"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="ragister">
+            <div class="button1"><button>Login</button></div>
+            <div class="button2">Register Now</div>
+        </div>
+    </div>
+</body>
+
+</html>
